@@ -9,6 +9,6 @@ package Facturacion;
  *
  * @author Gianno
  */
-public class ElementoFacturacion {
+public abstract class ElementoFacturacion {
     
 }
