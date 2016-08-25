@@ -9,6 +9,11 @@ package Facturacion;
  *
  * @author Gianno
  */
-public abstract class ElementoFacturacion {
-    public abstract  double getTotal();
+public class Factura extends ElementoFactura {
+
+    @Override
+    public double getTotal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }

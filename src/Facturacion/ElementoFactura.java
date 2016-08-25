@@ -9,6 +9,6 @@ package Facturacion;
  *
  * @author Gianno
  */
-public abstract class ElementoFacturacion {
-    public abstract  double getTotal();
+public abstract class ElementoFactura  extends ElementoFacturacion{
+    
 }
