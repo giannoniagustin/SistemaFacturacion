@@ -10,6 +10,7 @@ package Facturacion;
  * @author Gianno
  */
 public class Item extends ElementoItem{
+int cantidad;
 
     @Override
     public double getTotal() {
