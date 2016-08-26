@@ -5,14 +5,10 @@
  */
 package Facturacion;
 
-import Impuestos.Gravamen;
-
 /**
  *
  * @author Gianno
  */
-public abstract class ElementoFacturacion {
+public abstract class ElementoItem extends ElementoFacturacion {
     
-    private Gravamen impuesto;
-    public abstract  double getTotal();
 }

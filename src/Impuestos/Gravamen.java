@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Facturacion;
-
-import Impuestos.Gravamen;
+package Impuestos;
 
 /**
  *
  * @author Gianno
  */
-public abstract class ElementoFacturacion {
+public class Gravamen {
     
-    private Gravamen impuesto;
-    public abstract  double getTotal();
 }

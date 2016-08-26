@@ -5,14 +5,15 @@
  */
 package Facturacion;
 
-import Impuestos.Gravamen;
-
 /**
  *
  * @author Gianno
  */
-public abstract class ElementoFacturacion {
+public class ConjuntoItem  extends ElementoItem{
+
+    @Override
+    public double getTotal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
-    private Gravamen impuesto;
-    public abstract  double getTotal();
 }
