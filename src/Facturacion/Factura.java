@@ -10,10 +10,12 @@ package Facturacion;
  * @author Gianno
  */
 public class Factura extends ElementoFactura {
+    ConjuntoItem lineas;
 
     @Override
     public double getTotal() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+       return  lineas.getTotal();
     }
     
 }

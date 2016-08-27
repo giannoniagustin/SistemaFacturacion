@@ -5,15 +5,24 @@
  */
 package Facturacion;
 
+import java.util.Vector;
+
 /**
  *
  * @author Gianno
  */
 public class ConjuntoItem  extends ElementoItem{
+    Vector<Item> items;
 
     @Override
     public double getTotal() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double subTotal=0;
+        for(int i =0;i < items.size();i++)
+        {
+         subTotal+=items.elementAt(i).getTotal();
+        
+        }
+        return subTotal;
     }
     
 }

@@ -6,17 +6,24 @@
 package Facturacion;
 
 import Clientes.Cliente;
+import java.util.Vector;
 
 /**
  *
  * @author Gianno
  */
 public class ConjuntoFactura extends ElementoFactura{
-    private Cliente cliente;
+    Vector<Factura> facturas;
 
     @Override
     public double getTotal() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double subTotal=0;
+        
+        for (int i=0;i < facturas.size();i++){
+        
+        subTotal+=facturas.elementAt(i).getTotal();
+        }
+        return subTotal;
     }
     
 }

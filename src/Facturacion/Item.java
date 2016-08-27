@@ -5,16 +5,19 @@
  */
 package Facturacion;
 
+import Productos.Producto;
+
 /**
  *
  * @author Gianno
  */
 public class Item extends ElementoItem{
-int cantidad;
+    int cantidad;
+    Producto producto;
 
     @Override
     public double getTotal() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       return cantidad*producto.getPrecio();
     }
     
 }

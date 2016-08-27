@@ -10,5 +10,9 @@ package Productos;
  * @author Gianno
  */
 public class Producto {
+
+    public int getPrecio() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
